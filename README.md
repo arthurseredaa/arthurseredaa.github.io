@@ -1,4 +1,4 @@
-# arthurseredaa.github.io
+# Arthur Sereda
 ### My publicated projects:
 + [Currency Converter][1]
 -----
