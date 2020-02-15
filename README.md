@@ -1,6 +1,5 @@
 # arthurseredaa.github.io
 ### My publicated projects:
------
 + [Currency Converter][1]
 -----
 + [Moneykeeper][2]
