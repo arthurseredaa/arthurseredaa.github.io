@@ -1,4 +1,3 @@
-# Arthur Sereda
 ### My publicated projects:
 + [Currency Converter][1]
 -----
