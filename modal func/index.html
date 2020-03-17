@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+  <link rel="stylesheet" href="style.css">
+  <body>
+
+
+
+
+
+  <div class="wrapper">
+    <h1 id="title">Simple modal</h1>
+    <button class="btn btn-setModal btn-longer">Button</button>
+
+    <div class="modal hide">
+      <div class="modal__item">
+        <div class="modal-close">	   	
+          &#11199;
+        </div>
+        <h1 class="item-title">This is a form in modal!</h1>
+        <form class="modal-form">
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" placeholder="Name">
+          <label for="email">Your email</label>
+          <input type="text" name="email" id="email" placeholder="example@gmail.com">
+        </form>
+        <button class="btn btn-longer">Send</button>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
