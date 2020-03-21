@@ -1,0 +1,136 @@
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+:root {
+  --red: #9b0000;
+  --pink: #8e0038;
+  --purple: #6200ea;
+  --indigo: #304ffe;
+  --teal: #00bfa5;
+  --lime: #aeea00;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.red {
+  transition: all .1s linear;
+}
+.pink {
+  transition: all .1s linear;
+}
+.purple {
+  transition: all .1s linear;
+}
+.indigo {
+  transition: all .1s linear;
+}
+.teal {
+  transition: all .1s linear;
+}
+.lime {
+  transition: all .1s linear;
+}
+.red:hover {
+  border-top: 5px solid var(--red);
+}
+.pink:hover {
+  border-top: 5px solid var(--pink);
+}
+.purple:hover {
+  border-top: 5px solid var(--purple);
+}
+.indigo:hover {
+  border-top: 5px solid var(--indigo);
+}
+.teal:hover {
+  border-top: 5px solid var(--teal);
+}
+.lime:hover {
+  border-top: 5px solid var(--lime);
+}
+.active {
+  color: red;
+}
+main {
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  border: 30px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+}
+.tabs-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 25px;
+  align-items: center;
+  height: 70px;
+  /* border: 1px solid black; */
+}
+.tabs-header__item {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.tabs-content {
+}
+.tabs-content__item {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  color: #fff;
+  padding: 0px 50px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+/* !!!!! */
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+  animation: fade 1s;
+}
+.fade {
+  animation: fade 2.5s;
+}
+@keyframes fade {
+  from{opacity: .1}
+  to{opacity: 1}
+}
+/* !!!!!! */
+.red-c {
+  background-color: var(--red);
+}
+.pink-c {
+  background-color: var(--pink);
+}
+.purple-c {
+  background-color: var(--purple);
+}
+.indigo-c {
+  background-color: var(--indigo);
+}
+.teal-c {
+  background-color: var(--teal);
+}
+.lime-c {
+  background-color: var(--lime);
+}
+
+
+
+
