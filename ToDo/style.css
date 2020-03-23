@@ -1,0 +1,222 @@
+/* TODO: hideTask animation not working */
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #b0bec5;
+  width: 100%;
+  user-select: none;
+}
+span {
+  color: #d50000;
+}
+.todo-text {
+  margin: 10px 10px;
+}
+.todo-text .todo-title {
+  font-size: 40px;
+}
+.todo-text p{
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.container {
+  /* border: 1px solid black; */
+}
+.todo-input {
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.todo-input input {
+  width: 600px;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 7px;
+}
+.container {
+  width: 100%;
+  /* border: 1px solid black; */
+  /* height: 600px;   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column-reverse;
+}
+.item {
+  /* border: 1px solid black; */
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  box-shadow:  20px 20px 60px #96a2a7, 
+  -20px -20px 60px #cadbe3;
+  margin: 20px 0px;          
+}
+.task-input {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  /* border-radius: 25px; */
+  margin-right: 10px;
+  outline: none;
+  background-color: transparent;
+  background-color: rgba(90,174,190, .5);
+  border: 1px solid #5AAEBE;
+}
+.task-input:disabled {
+  user-select: none;
+  background-color: transparent;
+  border: none;
+}
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  float: right;
+  height: 100%;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  height: 100px;
+}
+.btn-wrapper .btn {
+  /* height: 30px; */
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.edit img {
+  width: 15px;
+}
+.remove img {
+  width: 20px;
+}
+.edit, .remove {
+  opacity: .8;
+}
+.correctError {
+  background-color: rgba(213,0,0, .5);
+}
+.clear-btn {
+  height: 100px;
+  width: 200px;
+  margin: 20px 25%;
+  font-size: 40px;
+}
+
+
+/* ANIMATIONS */
+.hideTask {
+  animation: fadeIn 1s;
+}
+/* @keyframes fadeIn {
+  from{opacity: 1;}
+  to{opacity: .1;}
+} */
+.showTask {
+  animation: fadeOut 1s;
+}
+@keyframes fadeOut {
+  from{opacity: .1;}
+  to{opacity: 1;}
+}
+@keyframes fadeOut {
+  from{opacity: .1;transform: translateY(-100px);}
+  to{opacity: 1; transform: translateY(0px);}
+}
+/* MEDIA */
+@media(max-width: 750px) {
+  .todo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .todo-text > .todo-title {
+    font-size: 60px;
+  }
+  .todo-text p {
+    font-size: 15px;
+    color: #222;
+    opacity: .5;
+  }
+  .task-input {
+    font-size: 30px;
+    margin-right: 0px;
+    padding: 30px 10px;
+  }
+  .edit img {
+    width: 25px;
+  }
+  .remove img {
+    width: 25px;
+  }
+  .item {
+    height: 200px;
+    flex-direction: column;
+  }
+  .btn-wrapper .btn {
+    height: 50px;
+  }
+  .btn-wrapper {
+    height: auto;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    width: 100%;
+    /* padding-right: 50px; */
+  }
+  .todo-input {
+    flex-direction: column;
+    padding: 0px 20px;
+    /* border: 1px solid black; */
+  }
+  .todo-input > .main-input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    /* width: 550px; */
+    height: 60px;
+    /* font-size: 30px; */
+  }
+  .todo-input .btn {
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 500px) {
+  .item {
+    height: 300px;
+  }
+  .btn-wrapper {
+    flex-direction: column;
+    /* border: 1px solid black; */
+  }
+  .btn-wrapper .btn {
+    width: 100%;
+  }
+  .btn-wrapper .edit {
+    margin-bottom: 20px;
+  }
+}
