@@ -1,7 +1,7 @@
 ### My publicated projects:
 + [Currency Converter][1]
 + [Крылатко][2]
-+[Ирвис Окна]
++ [Ирвис Окна]
 -----
 [1]: https://arthurseredaa.github.io/currency-converter/index.html "UAH -> USD"
 [2]: https://arthurseredaa.github.io/chairs-store/index.html "Buy baby chair for your kids"
