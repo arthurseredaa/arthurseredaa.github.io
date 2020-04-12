@@ -7,5 +7,5 @@
 [1]: https://arthurseredaa.github.io/currency-converter/index.html "UAH -> USD"
 [2]: https://arthurseredaa.github.io/chairs-store/index.html "Buy baby chair for your kids"
 [3]: https://arthurseredaa.github.io/irvis-windows/index.html "Glazing of balconies for any taste, any complexity"
-[4]: https://github.com/arthurseredaa/arthurseredaa.github.io/blob/master/paintings.art/index.html "Замовити портрет ніколи не було простіше"
+[4]: https://arthurseredaa.github.io/paintings.art/index.html "Ordering a portrait has never been easier"
 
